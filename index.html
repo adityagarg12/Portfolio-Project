@@ -20,7 +20,22 @@
             </ul> 
          </div>
     </nav>
-    
+    <nav id="mobile-nav">
+        <div class="logo">Aditya Garg</div>
+        <div class="menu">
+            <div class="hamburger-icon" onclick="togglemenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="togglemenu()">Home</a> </li> <!--toggle menu because when we click about or anything , we wanr menu to close-->
+                <li><a href="#experience" onclick="togglemenu()">About</a> </li>
+                <li><a href="#projects" onclick="togglemenu()">Project</a> </li>
+                <li><a href="#contact" onclick="togglemenu()">Contact</a> </li>
+            </div>
+        </div>
+    </nav>
     <script src="script.js"></script>
 </body>
 </html>
