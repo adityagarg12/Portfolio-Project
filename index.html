@@ -15,6 +15,7 @@
          <div>
             <ul class="header"><!--unordered list-->
                  <!--list-->
+                 
                 <li><a href="#About">About</a> </li>
                 <li><a href="#Projects">Projects</a> </li>
                 <li><a href="#Contact">Contact</a> </li>
@@ -30,6 +31,7 @@
                 <span></span>
             </div>
             <div class="menu-links">
+                
                 <li><a href="#About" onclick="togglemenu()">About</a> </li> <!--toggle menu because when we click about or anything , we wanr menu to close-->
                 
                 <li><a href="#Projects" onclick="togglemenu()">Projects</a> </li>
@@ -59,6 +61,40 @@
             </div>
         </div>
     </section>
+    <section id="About">
+        <p class="section_text_p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section_pic-container-1">
+                <img src="./images/Aditya.jpg" alt="Profile Picture" class="about-pic"/>
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                    <img src="./images/experience.png" alt="Experience icon" class="icon"/>
+                    <h3>Experience</h3>
+                    <p>+6 days <br/>Frontend Development</p>
+                </div>
+                <div class="details-container">
+                    <img src="./images/education.png" alt="Education icon" class="icon"/>
+                    <h3>Education</h3>
+                    <p>B.tech <br/>Bachelors Degree</p>
+                </div>
+            </div>
+            <div class="text-container">
+                <p>
+                    I hail from Kurukshetra, Haryana. Currently I am pursuing B.Tech in Computer Science and Engineering 
+                    from Indian Institute of Technology, Delhi. I am always trying to learn and explore. "All genuine 
+                    learning comes through experience" are the words I live by. 
+                </p>
+            </div>
+        </div>
+        </div>
+
+        <img src="./images/arrow.png" alt="Next Section" class="icon arrow"
+        onclick="location.href='#Projects'"/>
+    </section>
+   
     <script src="script.js"></script>
 </body>
 </html>
