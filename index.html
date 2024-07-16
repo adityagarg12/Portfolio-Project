@@ -6,6 +6,7 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css"/>
     <link rel="stylesheet" href="mediaqueries.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <nav id="desktop-nav">
@@ -13,10 +14,10 @@
         <!-- font alkatra -->
          <div>
             <ul class="header"><!--unordered list-->
-                <li><a href="#">Home</a> </li> <!--list-->
-                <li><a href="#">About</a> </li>
-                <li><a href="#">Project</a> </li>
-                <li><a href="#">Contact</a> </li>
+                 <!--list-->
+                <li><a href="#About">About</a> </li>
+                <li><a href="#Projects">Projects</a> </li>
+                <li><a href="#Contact">Contact</a> </li>
             </ul> 
          </div>
     </nav>
@@ -29,13 +30,35 @@
                 <span></span>
             </div>
             <div class="menu-links">
-                <li><a href="#about" onclick="togglemenu()">Home</a> </li> <!--toggle menu because when we click about or anything , we wanr menu to close-->
-                <li><a href="#experience" onclick="togglemenu()">About</a> </li>
-                <li><a href="#projects" onclick="togglemenu()">Project</a> </li>
-                <li><a href="#contact" onclick="togglemenu()">Contact</a> </li>
+                <li><a href="#About" onclick="togglemenu()">About</a> </li> <!--toggle menu because when we click about or anything , we wanr menu to close-->
+                
+                <li><a href="#Projects" onclick="togglemenu()">Projects</a> </li>
+                <li><a href="#Contact" onclick="togglemenu()">Contact</a> </li>
             </div>
         </div>
     </nav>
+    <section id="profile">
+        <div class="section_pic-container">
+            <img src="./images/Aditya.jpg" alt="Aditya Profile Picture">
+        </div>
+        <div class="section_text">
+            <p class="section_text_p1">Hello! I'm</p>
+            <h1 class="title">Aditya Garg</h1>
+            <p class="section_text_p2">Computer Science Student</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./images/resume-example.pdf')">
+                    Download CV
+                </button>
+                <button class="btn btn-color-1" onclick="location.href='./#Contact'">
+                    Contact Me
+                </button>
+            </div>
+            <div id="socials-container">
+                <i class="fa-brands fa-linkedin" alt="My LinkedIn profile" onclick="location.href='https://www.linkedin.com/in/aditya-garg-715199280/'"></i>
+                <i class="fa-brands fa-github" alt="My Github Profile" onclick="location.href='https://github.com/adityagarg12'" ></i>
+            </div>
+        </div>
+    </section>
     <script src="script.js"></script>
 </body>
 </html>
