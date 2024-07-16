@@ -386,3 +386,18 @@ margin-bottom: 1rem;
   #linkedin{
     cursor: default;
   }
+
+  /*FOOTER*/
+  footer{
+    height: 26vh;
+    margin: 0.1rem ;
+    background-color: rgb(37, 37, 37);
+  }
+  footer p{
+    text-align: center;
+  }
+  #footer-nav{
+    justify-content: space-around;
+    align-items: center;
+    height: 17vh;
+  }
