@@ -30,7 +30,7 @@
     --icon-moon:#B1B0B5 ;
     --switch-circle-pos:0.28rem;
    --contact-info-container-bg:var(--btn-color-2-hover);
-
+--switch-circle-pos-mob:0.25rem
     
 }
 :root[data-theme="dark"]{
@@ -61,7 +61,7 @@
     --icon-sun: grey;
     --icon-moon:#dce3ff ;
     --switch-circle-pos:3.1rem;
-   
+   --switch-circle-pos-mob:2.74rem;
 
 
 
@@ -181,6 +181,7 @@ a:hover{
     max-height: 0;
     overflow: hidden;
     transition: all 0.3 ease-in-out;
+    z-index: 1;
 }
 .menu-links a{
     display: block;
@@ -249,6 +250,7 @@ section{
     display: flex;
     height: 400px;
     width: 400px;
+    z-index: 0;
     
     margin: auto 0;
 }

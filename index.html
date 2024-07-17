@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
-    <script>
+    <!-- <script>
         //check local storage
         let localS=localStorage.getItem('theme')
         themeToSet=localS
@@ -13,7 +13,7 @@
             themeToSet=window.matchMedia('(prefers-color-scheme:dark)').matches? 'dark':'light'
         }
         document.documentElement.setAttribute('data-theme',themeToSet)
-    </script>
+    </script> -->
 
     <link rel="stylesheet" href="style.css"/>
     <link rel="stylesheet" href="mediaqueries.css"/>
@@ -55,20 +55,6 @@
     <nav id="mobile-nav">
         <div class="logo">Aditya Garg<b><b><b>.</b></b></b></div>
        <div class="mobile-theme">
-        <div class="menu">
-            <div class="hamburger-icon" onclick="togglemenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="menu-links">
-                
-                <li><a href="#About" onclick="togglemenu()">About</a> </li> <!--toggle menu because when we click about or anything , we wanr menu to close-->
-                
-                <li><a href="#Projects" onclick="togglemenu()">Projects</a> </li>
-                <li><a href="#Contact" onclick="togglemenu()">Contact</a> </li>
-            </div>
-        </div>
         <div class="theme-switcher">
             <svg width="24" height="24" viewBox="0 0 24 24" id="icon-sun"  xmlns="http://www.w3.org/2000/svg">
                 <path d="M12 5.53125C11.7265 5.53125 11.4642 5.4226 11.2708 5.2292C11.0774 5.03581 10.9688 4.7735 10.9688 4.5V2.25C10.9688 1.9765 11.0774 1.71419 11.2708 1.5208C11.4642 1.3274 11.7265 1.21875 12 1.21875C12.2735 1.21875 12.5358 1.3274 12.7292 1.5208C12.9226 1.71419 13.0312 1.9765 13.0312 2.25V4.5C13.0312 4.7735 12.9226 5.03581 12.7292 5.2292C12.5358 5.4226 12.2735 5.53125 12 5.53125Z" />
@@ -87,6 +73,21 @@
                     
                 
          </div>
+        <div class="menu">
+            <div class="hamburger-icon" onclick="togglemenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                
+                <li><a href="#About" onclick="togglemenu()">About</a> </li> <!--toggle menu because when we click about or anything , we wanr menu to close-->
+                
+                <li><a href="#Projects" onclick="togglemenu()">Projects</a> </li>
+                <li><a href="#Contact" onclick="togglemenu()">Contact</a> </li>
+            </div>
+        </div>
+       
         </div>
     </nav>
     <section id="profile">
@@ -180,10 +181,10 @@
                 </div>
                 <h2 class="experience-sub-title project-title">Project Two</h2>
                 <div class="btn-container">
-                   <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/adityagarg12/HTMLcodes/blob/master/Assignment-16/assignment16_2.PNG'">
+                   <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/adityagarg12/Portfolio-Project'">
                     View Project
                    </button> 
-                   <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/adityagarg12/HTMLcodes/blob/master/Assignment-16/assignment16_2.PNG'">
+                   <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/adityagarg12/Portfolio-Project'">
                     Live Demo
                    </button> 
                 </div>

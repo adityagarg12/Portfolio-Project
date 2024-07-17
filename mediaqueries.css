@@ -82,6 +82,9 @@ margin: 0 auto 2rem;
     .about-containers, .contact-info-upper-container,.btn-container{
         flex-wrap: wrap;
     }
+    .contact-info-upper-container{
+        flex-direction: column;
+    }
     .contact-info-container{
         margin: 0;
     }
@@ -90,6 +93,8 @@ margin: 0 auto 2rem;
     }
     .logo{
         font-size: 1.5rem;
+        padding-left: 0;
+        margin-left: 0;
     }
     .header{
         font-size: 1.2rem;
@@ -112,4 +117,14 @@ text-align: center ;
     .text-container{
         text-align: justify;
     }
+    .theme-switcher{
+        padding: 0.44rem;
+        gap:1rem;
+    }
+    .theme-switcher::before{
+        width: 1.84rem ;
+        height:1.84rem ;
+        transform: translateX(var(--switch-circle-pos-mob));
+    }
+
 }
