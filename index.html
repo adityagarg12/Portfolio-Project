@@ -91,7 +91,7 @@
     </nav>
     <section id="profile">
         <div class="section_pic-container">
-            <img src="./images/Aditya.jpg" alt="Aditya Profile Picture">
+            <img src="./images/Aditya.jpg" alt="Aditya Profile Picture" class="pfp">
         </div>
         <div class="section_text">
             <p class="section_text_p1">Hello! I'm</p>
@@ -243,5 +243,10 @@
         <p class="Copyright">Copyright &#169; 2024 Aditya Garg. All rights Reserved. </p>
     </footer>
     <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        gsap.from('.about-pic',{y:'200px',delay:0.5,duration:1})
+        gsap.from('.pfp',{y:'200px',delay:0.5,duration:1})
+    </script>
 </body>
 </html>
